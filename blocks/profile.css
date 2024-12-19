@@ -8,7 +8,7 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -53,7 +53,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  background-color: #fcf5e5;
+  background-color: transparent;
   font-family: "Poppins", sans-serif;
   border: none;
   transition: opacity 0.75s;
@@ -65,7 +65,7 @@
 }
 
 .profile__add-button {
-  margin-top: 138px;
+  margin-top: auto;
   margin-left: auto;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -109,21 +109,11 @@
     margin-bottom: 6px;
     font-size: 20px;
     max-width: 288px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
   }
 
   .profile__description {
     margin-bottom: 32px;
     max-width: 288px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
   }
 
   .profile__edit-button {
