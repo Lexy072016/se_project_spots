@@ -44,7 +44,7 @@
   max-width: 420px;
 }
 
-.profile__edit-button {
+.profile__edit-btn {
   margin-top: auto;
   display: flex;
   justify-content: flex-start;
@@ -59,7 +59,7 @@
   transition: opacity 0.75s;
 }
 
-.profile__edit-button:hover {
+.profile__edit-btn:hover {
   opacity: 100%;
   cursor: pointer;
 }
@@ -116,7 +116,7 @@
     max-width: 288px;
   }
 
-  .profile__edit-button {
+  .profile__edit-btn {
     margin-bottom: 20px;
     justify-content: center;
   }
