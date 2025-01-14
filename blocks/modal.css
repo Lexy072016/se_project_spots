@@ -84,6 +84,10 @@
   background-color: rgba(33, 33, 33, 1);
   color: rgba(252, 245, 229, 1);
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .modal__button:hover {
