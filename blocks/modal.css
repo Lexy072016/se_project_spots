@@ -43,13 +43,13 @@
 
 .modal__close-button:hover {
   opacity: 100%;
-  transition: 1s;
   cursor: pointer;
 }
 
 .modal__title {
   margin: 0 0 32px;
   color: rgba(33, 33, 33, 1);
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -60,6 +60,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 32px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 17.6px;
@@ -69,8 +70,7 @@
 .modal__input {
   padding: 16px 12px;
   border-radius: 8px;
-  color: rgba(33, 33, 33, 0.4);
-  opacity: 40%;
+  color: rgba(33, 33, 33, 1);
 }
 
 .modal__input:hover {
@@ -84,6 +84,10 @@
   background-color: rgba(33, 33, 33, 1);
   color: rgba(252, 245, 229, 1);
   border-radius: 8px;
+}
+
+.modal__button:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {

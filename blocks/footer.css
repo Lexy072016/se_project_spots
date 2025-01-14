@@ -2,6 +2,7 @@
   padding: 60px 0px;
   display: flex;
   justify-content: center;
+  background-color: #fcf5e5;
 }
 
 .footer__content {
@@ -9,6 +10,7 @@
   display: flex;
   justify-content: center;
   color: #212121;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
