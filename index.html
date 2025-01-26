@@ -38,11 +38,16 @@
             <template id="card-template">
               <li class="card">
                 <img src="" alt="" class="card__image" />
+                <button class="card__delete-button">
+                  <img
+                    src="./images/trash-bin.svg"
+                    alt="Delete"
+                    class="card__delete-icon"
+                  />
+                </button>
                 <div class="card__content">
                   <h2 class="card__title"></h2>
-                  <button type="button" class="card__fav-button">
-                    <img src="./images/fav-button.svg" alt="Favorite button" />
-                  </button>
+                  <button type="button" class="card__fav-button"></button>
                 </div>
               </li>
             </template>
