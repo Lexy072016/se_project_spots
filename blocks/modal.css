@@ -151,6 +151,12 @@
     padding: 12px;
   }
 
+  .modal__container_type_preview {
+    padding: 0;
+    width: 288px;
+    height: 288px;
+  }
+
   .modal__title {
     font-size: 20px;
     margin-bottom: 24px;
@@ -160,6 +166,11 @@
   .modal__close-button {
     top: 12px;
     right: 12px;
+  }
+
+  .modal__close-button_type_preview {
+    top: -41px;
+    left: 254px;
   }
 
   .modal__label {
