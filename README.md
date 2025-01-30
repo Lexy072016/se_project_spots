@@ -15,6 +15,9 @@ Here is some of the techniques used in my code:
 Media Queries to create a smooth interface for different screen types.
 Fonts were added and different font weights were used to create more variety throughout the page.
 Transitions were used on all of the buttons for interactivity.
+Transitions were also added to the modals for a smooth interface when opening and closing the edit profile and new post modals.
+Image post can be added and deleted due to added Javascript code.
+Profile name and description can be changed by the user for a more personal experience.
 This link will take you to my Github account.
 https://lexy072016.github.io/se_project_spots/
 **Figma**
