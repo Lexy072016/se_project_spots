@@ -72,7 +72,7 @@
   opacity: 0.4;
 }
 
-.card__like @media screen and (max-width: 627px) {
+@media screen and (max-width: 627px) {
   .card__image {
     width: 288px;
     height: 288px;
