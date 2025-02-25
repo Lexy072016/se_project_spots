@@ -61,7 +61,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   evt.target.reset();
-  disableButton(cardSubmitButton);
+  disableButton(cardSubmitButton, settings);
   cardNameInput.value = "";
   cardLinkInput.value = "";
   closeModal(cardModal);
@@ -105,6 +105,12 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+
+  const form = modal.querySelector(".modal__form");
+  if (form) {
+    const inputList = Array.from(form.querySelectorAll(".modal__input"));
+    resetValidation(form, inputList, settings);
+  }
 }
 
 function handleEditFormSubmit(evt) {
@@ -134,9 +140,20 @@ previewCloseModalButton.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
-previewModal.addEventListener("click", (event) => {
-  if (event.target === previewModal) {
-    closeModal(previewModal);
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
   }
 });
 
