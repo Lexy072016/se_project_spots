@@ -126,9 +126,8 @@ function handleEditFormSubmit(evt) {
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
-  const form = editModal.querySelector(".modal__form");
-  const inputList = Array.from(form.querySelectorAll(".modal__input"));
-  resetValidation(form, inputList, settings);
+  const inputList = [editModalNameInput, editModalDescriptionInput];
+  resetValidation(editFormElement, inputList, settings);
   openModal(editModal);
 });
 editModalCloseButton.addEventListener("click", () => {

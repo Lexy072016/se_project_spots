@@ -163,8 +163,9 @@
 
 @media screen and (max-width: 320px) {
   .modal__container_type_preview {
-    width: 100%;
-    max-width: 288px;
+    padding: 0;
+    width: 288px;
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -174,7 +175,7 @@
 
   .modal__image {
     width: 100%;
-    max-width: 288px;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
@@ -184,10 +185,6 @@
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
-  }
-
-  .modal__container {
-    padding: 12px;
   }
 
   .modal__container_type_preview {
